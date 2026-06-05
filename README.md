@@ -121,45 +121,41 @@ Este trabajo se desarrolló con asistencia de un modelo de IA (**Claude**) en un
 
 ### Cómo se Usó la IA
 
-✅ **Exploración y código**: Se pidió a la IA escribir y ejecutar el código de auditoría, queries SQL y análisis estadísticos (DuckDB/pandas/scipy) directamente sobre los CSV, iterando sobre resultados.
+ Apoyo técnico y consultas:
 
-✅ **Razonamiento analítico**: La IA propuso enfoques para cada bloque:
-- Usar diferencia-en-diferencias al detectar desbalance del A/B
-- Corregir métrica de quiebres cuando el método ingenuo daba resultados imposibles
-- Diseñar visualizaciones que respalden conclusiones
+Explicación de conceptos relacionados con calidad de datos, modelado dimensional, ETL y métricas de negocio.
+Resolución de dudas sobre SQL Server, importación de archivos CSV y construcción de consultas SQL.
 
-✅ **Automatización y formato**: Generación de notebooks, dashboards, PDF y exportación de datos.
+ Apoyo en propuestas de solución:
+
+Sugerencias de enfoques para resolver los distintos bloques de la prueba.
+Recomendaciones para estructurar consultas, validaciones y documentación.
+
+ Documentación y presentación:
+
+Apoyo en la redacción de explicaciones técnicas, comentarios en consultas SQL y organización del README.
 
 ### Validación del Analista
 
-| Generado por IA | Validado/Decidido por Analista |
-|---|---|
-| Primeras versiones del código | Todas las cifras ejecutadas sobre datos reales |
-| Queries SQL | Resultados revisados y cuestionados |
-| Visualizaciones | Números de negocio no delegados a ciegas |
-| Textos y diseño | Decisiones de criterio: GMV, exclusiones, North Star |
+Apoyo brindado por IA	Validación realizada por el analista
+Explicación de conceptos de SQL, calidad de datos y modelado dimensional	Verificación de resultados directamente en SQL Server
+Sugerencias de consultas SQL y estructuras de análisis	Ajuste de consultas según la estructura real de las tablas importadas
+Apoyo en la interpretación de errores de importación y tipos de datos	Corrección manual de problemas detectados durante la carga de los CSV
+Apoyo en la redacción de documentación y comentarios	Interpretación de hallazgos y conclusiones de negocio
+Supervisión y validación
 
-**Criterio de fondo** (qué es correcto, qué es accionable, qué advertir) se mantuvo bajo revisión humana en cada bloque.
+Todas las consultas fueron ejecutadas sobre los datos reales del ejercicio.
 
-### Prompts Representativos
+Los resultados obtenidos fueron revisados manualmente para validar:
 
-```
-"Audita la calidad de los 6 CSV y dame evidencia y decisión por hallazgo."
-"El GMV perdido por quiebres da 7x el GMV total — eso es imposible, revisa la metodología."
-"Los grupos del A/B no están balanceados; resuélvelo con el método correcto."
-"Arma el dashboard y la presentación ejecutiva en inglés con cada recomendación respaldada por un número."
-```
-
----
-
-## Navegación Rápida
-
-- 📖 **Comienza aquí**: Lee `bloque0_auditoria.md` (contexto de datos)
-- 🔍 **Profundiza**: Abre `bloque3_analisis.html` en el navegador
-- 📊 **Dashboard**: Abre `bloque5_dashboard.html` en el navegador
-- 📑 **Presentación**: Descarga `bloque5_presentacion.pdf`
-- 🛠️ **Reconstruye**: Sigue `bloque5_powerbi_guia.md` para Power BI / Tableau
+Calidad e integridad de los datos.
+Consistencia de las métricas calculadas.
+Cumplimiento de los requerimientos de cada bloque.
+Coherencia de las conclusiones presentadas.
+Ejemplos de uso
+Explicación de errores de conversión de datos en SQL Server.
+Apoyo en la construcción de consultas para auditoría de calidad de datos.
+Apoyo en el diseño del modelo dimensional tipo Star Schema.
 
 ---
 
-**Versión**: v1.0 | **Último update**: 2024 | **Desarrollado con Claude**

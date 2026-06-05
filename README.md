@@ -33,34 +33,34 @@ prueba_tecnica_[nombre]/
 ├── README.md                           ← este archivo
 │
 ├── data/
-│   └── (colocar aquí los 6 CSV originales)
+│   └── archivos csv
 │
-├── 📋 BLOQUE 0: AUDITORÍA DE CALIDAD
+├──  BLOQUE 0: AUDITORÍA DE CALIDAD
 │   ├── audit.py                        ← código reproducible
 │   └── bloque0_auditoria.md            ← hallazgos y decisiones
 │
-├── 🔍 BLOQUE 1: QUERIES SQL
+├──  BLOQUE 1: QUERIES SQL
 │   └── bloque1_queries.sql             ← 6 queries comentadas y validadas
 │
-├── 📐 BLOQUE 2: MODELADO, ETL Y GOBERNANZA
+├──  BLOQUE 2: MODELADO, ETL Y GOBERNANZA
 │   ├── bloque2_decisiones.md           ← decisiones y justificaciones
 │   └── bloque2_modelo.pdf              ← diagrama Star Schema
 │
-├── 📊 BLOQUE 3: ANÁLISIS EXPLORATORIO Y A/B
+├──  BLOQUE 3: ANÁLISIS EXPLORATORIO Y A/B
 │   ├── bloque3_analisis.ipynb          ← notebook ejecutado (código+resultados)
 │   ├── bloque3_analisis.html           ← mismo notebook en HTML
 │   ├── bloque3_analisis.md             ← versión narrativa (resumen)
 │   └── bloque3_visualizaciones/        ← 5 gráficos (PNG)
 │
-├── 📈 BLOQUE 4: FRAMEWORK DE KPIs
+├──  BLOQUE 4: FRAMEWORK DE KPIs
 │   └── bloque4_kpi_framework.md        ← framework + North Star Metric
 │
-├── 📱 BLOQUE 5: DASHBOARD Y PRESENTACIÓN
+├──  BLOQUE 5: DASHBOARD Y PRESENTACIÓN
 │   ├── bloque5_dashboard.html          ← dashboard interactivo funcional
 │   ├── bloque5_powerbi_guia.md         ← guía + medidas DAX (.pbix/.twbx)
 │   └── bloque5_presentacion.pdf        ← presentación ejecutiva (inglés, 5 slides)
 │
-└── 🔧 AUTOMATIZACIÓN Y EXPORTACIÓN
+└──  AUTOMATIZACIÓN Y EXPORTACIÓN
     ├── build_notebook.py               ← genera y ejecuta Bloque 3
     ├── build_deck.py                   ← genera presentación PDF
     ├── dashboard_data.json             ← agregados (alimentan dashboard)

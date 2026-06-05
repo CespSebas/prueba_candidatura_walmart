@@ -30,41 +30,56 @@ Análisis end-to-end sobre **6 CSV** con:
 ```
 prueba_tecnica_[nombre]/
 │
-├── README.md                           ← este archivo
+├── README.md
 │
 ├── data/
-│   └── archivos csv
+│   ├── transactions.csv
+│   ├── transaction_items.csv
+│   ├── stores.csv
+│   ├── products.csv
+│   ├── vendors.csv
+│   └── store_promotions.csv
 │
-├──  BLOQUE 0: AUDITORÍA DE CALIDAD
-│   ├── audit.py                        ← código reproducible
-│   └── bloque0_auditoria.md            ← hallazgos y decisiones
+├── BLOQUE 0: AUDITORÍA DE CALIDAD/
+│   ├── audit.py
+│   └── bloque0_auditoria.md
 │
-├──  BLOQUE 1: QUERIES SQL
-│   └── bloque1_queries.sql             ← 6 queries comentadas y validadas
+├── BLOQUE 1: QUERIES SQL/
+│   └── bloque1_queries.sql
 │
-├──  BLOQUE 2: MODELADO, ETL Y GOBERNANZA
-│   ├── bloque2_decisiones.md           ← decisiones y justificaciones
-│   └── bloque2_modelo.pdf              ← diagrama Star Schema
+├── BLOQUE 2: MODELADO, ETL Y GOBERNANZA/
+│   ├── bloque2_decisiones.md
+│   └── bloque2_modelo.pdf
 │
-├──  BLOQUE 3: ANÁLISIS EXPLORATORIO Y A/B
-│   ├── bloque3_analisis.ipynb          ← notebook ejecutado (código+resultados)
-│   ├── bloque3_analisis.html           ← mismo notebook en HTML
-│   ├── bloque3_analisis.md             ← versión narrativa (resumen)
-│   └── bloque3_visualizaciones/        ← 5 gráficos (PNG)
+├── BLOQUE 3: ANÁLISIS EXPLORATORIO Y A/B/
+│   ├── bloque3_analisis.ipynb
+│   ├── bloque3_analisis.html
+│   ├── bloque3_analisis.md
+│   └── bloque3_visualizaciones/
+│       ├── gmv_semanal_por_formato.png
+│       ├── pareto_categorias.png
+│       ├── cohortes_retencion.png
+│       ├── gmv_perdido_quiebres.png
+│       └── did_efecto_exhibicion.png
 │
-├──  BLOQUE 4: FRAMEWORK DE KPIs
-│   └── bloque4_kpi_framework.md        ← framework + North Star Metric
+├── BLOQUE 4: FRAMEWORK DE KPIs/
+│   └── bloque4_kpi_framework.md
 │
-├──  BLOQUE 5: DASHBOARD Y PRESENTACIÓN
-│   ├── bloque5_dashboard.html          ← dashboard interactivo funcional
-│   ├── bloque5_powerbi_guia.md         ← guía + medidas DAX (.pbix/.twbx)
-│   └── bloque5_presentacion.pdf        ← presentación ejecutiva (inglés, 5 slides)
+├── BLOQUE 5: DASHBOARD Y PRESENTACIÓN/
+│   ├── bloque5_dashboard.html
+│   ├── bloque5_powerbi_guia.md
+│   └── bloque5_presentacion.pdf
 │
-└──  AUTOMATIZACIÓN Y EXPORTACIÓN
-    ├── build_notebook.py               ← genera y ejecuta Bloque 3
-    ├── build_deck.py                   ← genera presentación PDF
-    ├── dashboard_data.json             ← agregados (alimentan dashboard)
-    └── dashboard_export/               ← CSV para reconstruir en Power BI/Tableau
+└── AUTOMATIZACIÓN Y EXPORTACIÓN/
+    ├── build_notebook.py
+    ├── build_deck.py
+    ├── dashboard_data.json
+    └── dashboard_export/
+        ├── gmv_por_formato.csv
+        ├── cohortes_retencion.csv
+        ├── quiebres_stock.csv
+        ├── efecto_did.csv
+        └── kpi_resumen.csv
 ```
 
 ---

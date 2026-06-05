@@ -11,7 +11,7 @@ Análisis end-to-end sobre **6 CSV** con:
 
 ✓ Todos los resultados se calcularon ejecutando código real sobre los datos crudos  
 ✓ Las cifras de los entregables están validadas, no estimadas
-
+✓ Todos los entregables los encontrara en una carpeta llamada "Entregables"
 ---
 
 ## Hallazgos Principales
